@@ -35,6 +35,6 @@ end
 
 katz_deli = []
 take_a_number2(katz_deli)
-now_serving()
+now_serving(katz_deli)
 take_a_number2(katz_deli)
 puts katz_deli
