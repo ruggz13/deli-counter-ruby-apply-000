@@ -15,7 +15,7 @@ end
 
 def take_a_number(katz_deli, name)
   katz_deli << name
-  
+
 end
 
 def now_serving(katz_deli)
@@ -30,8 +30,8 @@ def take_a_number2(katz_deli)
   num = 47
   katz_deli << num
   puts "Welcome ticket holder: #{num}. You are number #{katz_deli.length} in line."
-  
-end 
+
+end
 
 katz_deli = []
 take_a_number2(katz_deli)
