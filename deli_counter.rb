@@ -1,5 +1,5 @@
 # Write your code here.
-katz_deli = []
+
 
 def line(katz_deli)
   if (katz_deli.length == 0)
@@ -15,7 +15,7 @@ end
 
 def take_a_number(katz_deli, name)
   katz_deli << name
-  puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
+  
 end
 
 def now_serving(katz_deli)
@@ -25,3 +25,14 @@ def now_serving(katz_deli)
     puts "Currently serving #{katz_deli.shift()}."
   end
 end
+
+def take_a_number2(katz_deli)
+  num = 47
+  katz_deli << num
+  puts "Welcome ticket holder: #{num}. You are number #{katz_deli.length} in line."
+  
+end 
+
+katz_deli = []
+take_a_number2(katz_deli)
+puts katz_deli
