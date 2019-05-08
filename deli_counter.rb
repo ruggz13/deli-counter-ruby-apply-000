@@ -26,10 +26,10 @@ def now_serving(katz_deli)
   end
 end
 
+$num = 47
 def take_a_number2(katz_deli)
-  num = 47
-  katz_deli << num
-  puts "Welcome ticket holder: #{num}. You are number #{katz_deli.length} in line."
+  katz_deli << $num
+  puts "Welcome ticket holder: #{$num}. You are number #{katz_deli.length} in line."
 
 end
 
