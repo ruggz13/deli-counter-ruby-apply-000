@@ -4,15 +4,13 @@ katz_deli = []
 def line(katz_deli)
   if (katz_deli.length == 0)
     puts "The line is currently empty."
-    numbersAndNames = []
-    counter = 0
-    len = katz_deli.length
-    until counter == len
-      counter += 1
-      numbersAndNames.push("#{counter+1}. #{katz_deli[counter]}")
-      puts "The line is currently: #{numbersAndNames.join(", ")}"
+  else
+    current_line = "The line is currently:"
+    katz_deli.each.with_index(1) do |person, i|
+      current_line.push(" #{i}. #{person}")
+    end
+    puts current_line
   end
-end
 end
 
 def take_a_number(katz_deli, name)
