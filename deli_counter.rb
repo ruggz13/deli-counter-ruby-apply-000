@@ -29,9 +29,8 @@ end
 $num = 47
 def take_a_number2(katz_deli)
   katz_deli << $num
-  $num += 1
   puts "Welcome ticket holder: #{$num}. You are number #{katz_deli.length} in line."
-
+  $num += 1
 end
 
 katz_deli = []
