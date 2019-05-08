@@ -13,6 +13,7 @@ def line(katz_deli)
       puts "The line is currently: #{numbersAndNames.join(", ")}"
   end
 end
+end
 
 def take_a_number(katz_deli, name)
   katz_deli.push(name)
@@ -25,4 +26,4 @@ def now_serving(katz_deli)
   else
     puts "Currently serving #{katz_deli.shift()}."
   end
-end 
+end
